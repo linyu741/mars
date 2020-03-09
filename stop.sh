@@ -1,5 +1,8 @@
-#查找该端口的进程信息,并将第二列的进程号赋给ID
-ID=`lsof -i:80 |grep java |awk '{print $1}'`
-echo $ID
-kill -9 $ID
-echo "kill success!"
+#!/bin/sh
+
+NAME="mars-reporting-web.jar"
+
+
+PID=$(cat /var/run/"$NAME".pid)
+kill -9 $PID
+
