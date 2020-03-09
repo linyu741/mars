@@ -4,4 +4,4 @@ echo '2'
 sleep 1
 echo '1'
 sleep 1
-nohup java -jar mars-reporting-web.jar & tailf nohup.out
+nohup java -jar mars-reporting-web.jar & 
