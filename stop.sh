@@ -3,6 +3,6 @@
 NAME="mars-reporting-web.jar"
 
 
-PID=$(cat /var/run/"$NAME".pid)
+PID=$(cat /home/cyberarkservice/mars-reporting/"$NAME".pid)
 kill -9 $PID
 
